@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+}
+body{
+    background-color: var(--bg-color2);
+}
+
+:root {
+    --main-font: "Raleway", serif;
+    --secondary-font: "Playfair Display", serif;
+    --third-font: "Prata", serif;
+    --bg-color1 :rgb(243, 242, 236);
+    --bg-color2 :rgb(237, 235, 228);
+}
+
+.header-1 {
+    height: 70px;
+    width: 100%;
+    background-color: var(--bg-color1);
+    border-bottom: 1px solid rgb(203, 192, 192);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-1 .left i {
+    margin-right: 1rem;
+    color: rgb(86, 79, 79);
+}
+
+.header-1 span {
+    margin-right: 2.5rem;
+}
+
+.header-2 strong {
+    font-family: var(--secondary-font);
+}
+
+.header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: var(--bg-color1);
+    border-bottom: 1px solid rgb(203, 192, 192);
+}
+
+.header-2 span {
+    color: rgb(86, 79, 79);
+
+}
+
+.header-2 ul,
+li {
+    display: flex;
+    text-decoration: none;
+
+    margin-right: 2rem;
+
+}
+
+.header-2 ul a {
+    color: rgb(86, 79, 79);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.life {
+    font-family: var(--secondary-font);
+    background-image: url(images/pattern1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 84% 0%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color1);
+
+
+}
+.life .left {
+    width: 480px;
+}
+
+.life h1 {
+    font-family: var(--secondary-font);
+    line-height: 5rem;
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+
+.life button {
+    padding: 10px 15px;
+    color: rgb(219, 185, 197);
+    border: 1px solid rgb(219, 185, 197);
+}
+
+.life button:hover {
+    padding-right: 15px;
+    transition: 0.6s ease-in;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+
+.life button:hover i {
+    padding-left: 15px;
+    transition: 0.6s ease-out;
+}
+.life .image-2{
+    height: 570px;
+    width: 395px;
+}
+@media screen and (max-width:850px) {
+    .life {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-top: 50px;
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .life .left{
+        width: 600px;
+        margin-left: 100px;
+    }
+    .life h1 {
+    font-size: 2.5rem;
+}
+}
+/*-- Clients -- */
+
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; 
+    width: 100%;
+    background-color: var(--bg-color2); 
+    background-image: 
+        url(images/client-image1.png), 
+        url(images/client-image2.png), 
+        url(images/client-image3.png), 
+        url(images/client-image4.png), 
+        url(images/client-image5.png); 
+    background-repeat: no-repeat; 
+    background-size: 200px auto; 
+    background-position: 
+    20% 50%, 
+    35% 50%, 
+    50% 50%,  
+    65% 50%,  
+    80% 50%;  
+}
+.autoshow {
+    animation: autoshowAnimation both linear;
+    animation-timeline: view(100% 5%);
+}
+@keyframes autoshowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/*-- Book -- */
+.book{
+    background-color:rgb(243, 242, 236) ;
+}
+
+.book .titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book h1 {
+    font-family: var(--third-font);
+    font-weight: bold;
+
+}
+
+/*-- Book Selling -- */
+.book-sell {
+    background-color: var(--bg-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--secondary-font);
+}
+.book-sell .left img {
+    border: 10px solid rgb(226, 225, 222) ;
+    height: 500px;
+    width: 350px;
+}
+.book-sell h1,h4,h5{
+    font-family: var(--secondary-font);
+}
+.book-sell h4{
+    width: fit-content;
+    font-weight: 600;
+
+}
+.book-sell h4:hover{
+    cursor: pointer;
+}
+
+.book-sell h4:hover i{
+    padding-left: 15px;
+    transition: 0.6s ease-in-out;
+}
+.book .image {
+    background-color: var(--bg-color2);
+}
+.book .card-body {
+    background-color: var(--bg-color1);
+}
+.product .image {
+    position: relative;
+}
+
+.product .card {
+    overflow: hidden;
+}
+
+.product .image h5 {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: bottom 1s ease, opacity 1s ease;
+}
+
+.product .image:hover h5 {
+    bottom: -8px;
+    opacity: 1;
+}
+.product .image h5{
+    font-weight: bold;
+}
+.book .view a {
+    color: black;
+    text-decoration: none;
+}
+.book .view {
+    position: relative;
+}
+.book p{
+   position: absolute;
+   right: 65px;
+   bottom: 25px;
+}
